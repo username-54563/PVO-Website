@@ -11500,3 +11500,39 @@ body.pvo-scrolled #mainNav .navbar-collapse{
 /* Make the floating hero wordmark look intentional, not like it escaped. */
 .pvo-floating-brand .pvo-line1{ font-size: clamp(2.2rem, 5vw, 4.2rem); }
 .pvo-floating-brand .pvo-line2{ font-size: clamp(1.9rem, 4vw, 3.4rem); margin-top: 0.35rem; }
+
+
+/* PVO dist-page edits */
+.service-logo {
+  max-height: 60px;
+  width: auto;
+}
+
+.service-link-btn {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.masthead-short {
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+}
+
+.xestro-hero-logo {
+  max-height: 90px;
+  width: auto;
+}
+
+.xestro-hero-copy {
+  max-width: 760px;
+}
+
+@media (max-width: 991.98px) {
+  .service-logo {
+    max-height: 52px;
+  }
+
+  .xestro-hero-logo {
+    max-height: 72px;
+  }
+}
