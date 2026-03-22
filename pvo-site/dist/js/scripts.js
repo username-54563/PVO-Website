@@ -20,6 +20,15 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink');
         }
+            // Shrink the navbar & dock the floating brand title
+        const brandFloat = document.getElementById('brandFloat');
+        if (brandFloat) {
+            if (window.scrollY > 80) {
+                document.body.classList.add('brand-docked');
+            } else {
+                document.body.classList.remove('brand-docked');
+            }
+        }
     };
 
     // Shrink the navbar

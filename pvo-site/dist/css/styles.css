@@ -11536,3 +11536,77 @@ body.pvo-scrolled #mainNav .navbar-collapse{
     max-height: 72px;
   }
 }
+
+/* PVO custom header/footer + hover-reveal nav */
+.pvo-wordmark{font-weight:700;letter-spacing:0.08em;text-transform:uppercase;}
+
+/* Reveal nav links only on hover (desktop) */
+@media (min-width: 992px){
+  .pvo-header .pvo-nav-veil{
+    overflow:hidden;
+    max-width:0;
+    opacity:0;
+    transition:max-width .25s ease,opacity .25s ease;
+  }
+  .pvo-header:hover .pvo-nav-veil{
+    max-width:1200px;
+    opacity:1;
+  }
+  .pvo-nav-dropdown:hover > .dropdown-menu{
+    display:block;
+    margin-top:0;
+  }
+}
+
+/* Brand float (white) that docks toward the header on scroll */
+.brand-float{
+  position:fixed;
+  left:50%;
+  top:9.5rem;
+  transform:translateX(-50%);
+  z-index:1035;
+  color:#ffffff;
+  font-family:"Montserrat",sans-serif;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  font-size:clamp(1.2rem, 3vw, 2.8rem);
+  line-height:1;
+  text-align:center;
+  pointer-events:none;
+  opacity:0.95;
+  transition:top .45s ease, transform .45s ease, font-size .45s ease, opacity .35s ease, letter-spacing .35s ease;
+  text-shadow:0 0.15rem 1rem rgba(0,0,0,.35);
+  white-space:nowrap;
+  max-width:calc(100vw - 2rem);
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+body.brand-docked .brand-float{
+  top:1.15rem;
+  transform:translateX(-50%) scale(.48);
+  opacity:.98;
+  letter-spacing:.12em;
+}
+@media (max-width: 991.98px){
+  .brand-float{top:7.4rem;}
+}
+
+/* Paper page tweaks */
+.paper-card{border:0;border-radius:1rem;box-shadow:0 .5rem 1.5rem rgba(0,0,0,.08);} 
+.paper-hero{padding-top:14rem;padding-bottom:6rem;} 
+.paper-hero-copy{max-width:840px;} 
+
+/* Stop the header nav hiding/minimising */
+.pvo-header .pvo-nav-veil{
+  max-width: none !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+}
+
+@media (min-width: 992px){
+  .pvo-header:hover .pvo-nav-veil{
+    max-width: none !important;
+    opacity: 1 !important;
+  }
+}

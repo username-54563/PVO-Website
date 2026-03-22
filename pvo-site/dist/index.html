@@ -15,33 +15,34 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-
-        <style>
-            .service-logo { max-height: 60px; width: auto; }
-            .service-link-btn { margin-top: 0.25rem; margin-bottom: 1rem; }
-            @media (max-width: 991.98px) {
-                .service-logo { max-height: 52px; }
-            }
-        </style>
-
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top pvo-header" id="mainNav">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse pvo-nav-veil" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 pvo-nav-links">
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                <li class="nav-item dropdown pvo-nav-dropdown">
+                    <a class="nav-link dropdown-toggle" href="index.html#services" id="servicesMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesMenu">
+                        <li><a class="dropdown-item" href="services.html">Full services</a></li>
+                        <li><a class="dropdown-item" href="xestro.html">Xestro support</a></li>
+                        <li><a class="dropdown-item" href="paper-to-digital.html">Paper to digital</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 
         <!-- Masthead-->
         <header class="masthead">
@@ -252,233 +253,6 @@
 
        
 
-        
-        <!-- Xestro -->
-        <section class="page-section bg-light" id="xestro">
-            <div class="container">
-                <div class="text-center">
-                    <img class="img-fluid mb-4" src="assets/img/xestrologo.png" alt="Xestro logo" style="max-height: 90px; width: auto;" />
-                    <h2 class="section-heading text-uppercase">Xestro Support</h2>
-                    <h3 class="section-subheading text-muted">Practical Xestro help for busy clinics.</h3>
-                </div>
-
-                <div class="row justify-content-center mb-5">
-                    <div class="col-lg-10">
-                        <p class="text-muted text-center">
-                            Purple Vector Operations helps clinics and clinicians get more out of Xestro with practical support around setup,
-                            templates, recalls, billing workflows, reporting, user access, and historical records handling.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row g-4 mt-2">
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4 text-center">
-                                <span class="fa-stack fa-4x mb-3">
-                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fas fa-file-lines fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <h4 class="text-uppercase">Templates and structure</h4>
-                                <p class="text-muted mb-0">Create, clean up, and standardise templates, labels, forms, and record structure so staff are not reinventing the wheel every Tuesday.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4 text-center">
-                                <span class="fa-stack fa-4x mb-3">
-                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fas fa-rotate fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <h4 class="text-uppercase">Recalls and workflows</h4>
-                                <p class="text-muted mb-0">Review recalls, follow-up processes, and internal task flow so things stop slipping into the void or getting handled six different ways.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4 text-center">
-                                <span class="fa-stack fa-4x mb-3">
-                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fas fa-file-invoice-dollar fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <h4 class="text-uppercase">Billing support</h4>
-                                <p class="text-muted mb-0">Tune billing-related workflows, reduce admin friction, and improve consistency around the parts staff usually hate touching.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h3 class="text-uppercase mb-3">Common Xestro support areas</h3>
-                                <ul class="text-muted mb-0">
-                                    <li>Templates, labels, and document structure</li>
-                                    <li>Recalls, follow-up workflows, and task cleanup</li>
-                                    <li>Billing workflows and administrative consistency</li>
-                                    <li>Reporting support and system tidy-ups</li>
-                                    <li>User access, permissions, and staff guidance</li>
-                                    <li>Historical records access and legacy workflow support</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h3 class="text-uppercase mb-3">What this is not</h3>
-                                <ul class="text-muted mb-0">
-                                    <li>Clinical advice or treatment support</li>
-                                    <li>Vendor-authoritative product documentation</li>
-                                    <li>Full replacement of your IT provider or software vendor</li>
-                                    <li>Magic. Sadly.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Process -->
-        <section class="page-section" id="process">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Process</h2>
-                    <h3 class="section-subheading text-muted">Clear enough to be reassuring. Flexible enough to survive reality.</h3>
-                </div>
-
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><h4>Step 1</h4></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Initial review</h4>
-                                <h4 class="subheading">Understand the current setup</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Review the practice's software, workflows, pain points, admin load, record handling, access issues, and operational priorities before recommending any work.</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><h4>Step 2</h4></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Scope and structure</h4>
-                                <h4 class="subheading">Choose the right engagement model</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Work may be structured as an ongoing retainer, a one-off project, a digitisation program, or targeted support depending on what the clinic actually needs.</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><h4>Step 3</h4></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Implement and tidy</h4>
-                                <h4 class="subheading">Fix the operational mess</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">This can include workflow cleanup, Xestro support, template preparation, document organisation, scanning, automation, and practical support that staff can realistically maintain.</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><h4>Step 4</h4></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Deliver and document</h4>
-                                <h4 class="subheading">Leave things usable</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Changes, files, and processes are documented clearly so the clinic is not left relying on mystery knowledge or improvised fixes.</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><h4>Step 5</h4></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Ongoing support</h4>
-                                <h4 class="subheading">Keep improving what matters</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">For retained clients, support continues through routine checks, problem-solving, incremental improvements, and practical help as the clinic changes.</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>Built<br>For<br>Clinics</h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section class="page-section bg-light" id="faq">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">FAQ</h2>
-                    <h3 class="section-subheading text-muted">The obvious questions clinics ask first.</h3>
-                </div>
-
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h4 class="text-uppercase">Does PVO provide clinical advice?</h4>
-                                <p class="text-muted mb-0">No. PVO is strictly non-clinical and does not provide diagnosis, treatment, clinical judgment, triage, or medico-legal advice.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h4 class="text-uppercase">What kinds of clinics are a good fit?</h4>
-                                <p class="text-muted mb-0">Specialist private practices, individual clinicians, rooms with workflow or admin issues, clinics using Xestro, and practices dealing with legacy paper record backlogs.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h4 class="text-uppercase">Do you replace our existing IT provider?</h4>
-                                <p class="text-muted mb-0">No. PVO works alongside existing IT providers where needed. The role is practical operational support, not pretending to absorb every backend system responsibility on earth.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h4 class="text-uppercase">Can you help with Xestro?</h4>
-                                <p class="text-muted mb-0">Yes. Support can include setup help, workflow optimisation, template support, historical records access support, and practical troubleshooting around day-to-day clinic use.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h4 class="text-uppercase">Can you scan paper records into digital files?</h4>
-                                <p class="text-muted mb-0">Yes. PVO can handle structured paper-to-digital conversion with OCR, file naming, folder organisation, optional upload support, and secure return methods.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h4 class="text-uppercase">How are services priced?</h4>
-                                <p class="text-muted mb-0">Support can be structured as retainers, one-off projects, digitisation programs, and add-on services depending on scope, workload, and the clinic's environment.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -545,12 +319,23 @@
 
         <!-- Footer-->
         <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-12 text-center">Made by Purple Vector Operations</div>
-                </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright © Purple Vector Operations 2026</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="mailto:admin@purplevectoroperations.com" aria-label="Email Purple Vector Operations"><i class="fas fa-envelope"></i></a>
             </div>
-        </footer>
+            <div class="col-lg-4 text-lg-end">
+                <a class="link-dark text-decoration-none me-3" href="about.html">About</a>
+                <a class="link-dark text-decoration-none me-3" href="services.html">Services</a>
+                <a class="link-dark text-decoration-none me-3" href="process.html">Process</a>
+                <a class="link-dark text-decoration-none me-3" href="faq.html">FAQ</a>
+                <a class="link-dark text-decoration-none" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
